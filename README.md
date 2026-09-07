@@ -4,6 +4,6 @@ Static English GitHub Pages website for RiftVM. The current page accurately pres
 
 Preview: `python3 -m http.server 8765` and open `http://localhost:8765`.
 
-No build dependencies, tracking, remote fonts or third-party scripts. The workspace visuals are CSS illustrations and explicitly labeled. The vector identity is sourced from `riftvm/riftvm/Resources/Brand/AppIcon.svg`.
+No build dependencies, tracking, remote fonts or third-party scripts. The hero is locally hosted AI-generated concept artwork, labeled as such. The responsive layout uses real HTML text. The vector identity is sourced from `riftvm/riftvm/Resources/Brand/AppIcon.svg`.
 
 Use the default Pages URL initially. Add riftvm.com only after DNS has been configured and verified.
