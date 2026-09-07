@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="RiftVM brings Omarchy and macOS workspaces to Apple Silicon. A native Mac app, built around independent virtual machines.">
+<meta name="theme-color" content="#172a32"><title>RiftVM — Room for another world.</title>
+<link rel="icon" href="assets/riftvm.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap"><a class="brand" href="./"><img src="assets/riftvm.svg" width="44" height="44" alt="">RiftVM</a><nav aria-label="Main"><a href="#workspaces">Workspaces</a><a href="#questions">Questions</a><a href="https://github.com/riftvm/riftvm">GitHub ↗</a></nav></header>
+<main id="main">
+<section class="hero wrap">
+<div class="hero-copy"><p class="eyebrow"><span class="dot"></span> A new home for virtual machines</p><h1>Room for<br>another <em>world.</em></h1><p class="intro">Your Mac. An Omarchy desktop. A fresh macOS workspace.<br class="wide"> Keep the possibilities open, and the worlds separate.</p><a class="button" href="https://github.com/riftvm/riftvm/releases">Follow the 0.1.0 release <span aria-hidden="true">↗</span></a><p class="requirements">Apple Silicon · macOS 27 · English</p><div class="release-note"><strong>In development.</strong> RiftVM 0.1.0 is undergoing testing. A public App download is not available yet.</div></div>
+<div class="worlds" aria-label="Illustration of separate Omarchy and macOS workspaces">
+<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+<article class="world mac-world"><div class="windowbar"><span class="lights" aria-hidden="true">● ● ●</span><span>macOS</span><span>02</span></div><div class="mac-landscape"><div class="sun"></div><div class="hill"></div><div class="hill second"></div></div><div class="world-label"><strong>A clean slate.</strong><span>A familiar place to try something new.</span></div></article>
+<article class="world omarchy-world"><div class="windowbar"><span class="lights" aria-hidden="true">● ● ●</span><span>Omarchy</span><span>01</span></div><div class="terminal"><span class="terminal-label">A different rhythm.</span><pre aria-label="Illustrative terminal">~ / projects
+<span>❯</span> make something
+
+<span class="muted">One workspace.
+Your tools. Your flow.</span>
+<span>❯</span> <span class="cursor">_</span></pre></div><div class="world-label"><strong>Make room for Linux.</strong><span>A keyboard-first desktop on your Mac.</span></div></article>
+<p class="illustration-note">Workspace illustration · not an App screenshot</p>
+</div>
+</section>
+<section class="workspace-section" id="workspaces"><div class="wrap"><p class="eyebrow">One app. Independent workspaces.</p><h2>Choose where<br>you want to work.</h2><div class="cards"><article><span class="number">01 / OMARCHY</span><h3>A Linux desktop,<br>ready to make your own.</h3><p>RiftVM’s Omarchy profile brings an ARM64 desktop image and guided first-user setup into a native Mac window.</p><span class="pill warm">Omarchy profile</span></article><article><span class="number">02 / MACOS</span><h3>A familiar Mac,<br>with a fresh start.</h3><p>Create a separate macOS workspace from a compatible restore image. Try a configuration without changing your everyday system.</p><span class="pill cool">macOS profile</span></article></div><p class="secondary-flow">Have your own installer? Custom ARM64 Linux has a separate ISO installation path.</p></div></section>
+<section class="principles wrap"><div><p class="eyebrow">Built around your workspace</p><h2>Stay in control<br>of what crosses over.</h2></div><div class="principle-list"><article><span>01</span><div><h3>Close the window. Keep the session.</h3><p>Workspace windows can stay out of the way while their virtual machines keep running. Reopen them from the menu bar.</p></div></article><article><span>02</span><div><h3>Share deliberately.</h3><p>Host folders are opt-in, with read-only or read-write permissions for each workspace. Your Home folder is not shared by default.</p></div></article><article><span>03</span><div><h3>A workspace is yours.</h3><p>New factory images are for new workspaces. Existing guest systems keep their own disks and update through their own tools.</p></div></article></div></section>
+<section class="faq wrap" id="questions"><p class="eyebrow">Before you begin</p><h2>A few useful details.</h2><details open><summary>Can I download RiftVM today?</summary><p>Not yet. Version 0.1.0 is in development. Follow the <a href="https://github.com/riftvm/riftvm/releases">App releases</a> for the signed download when it is ready. Image candidates are build and testing artifacts, not an App release.</p></details><details><summary>Which Macs will it support?</summary><p>RiftVM targets Apple Silicon Macs running macOS 27. Intel Macs and older macOS versions are outside the initial release scope.</p></details><details><summary>Is this an official Omarchy project?</summary><p>No. RiftVM is an independent project. Omarchy and its ARM64 adaptation are separate upstream projects; their licenses and attribution remain with their respective owners.</p></details><details><summary>What about shared files and privacy?</summary><p>Only grant a guest access to folders you intend to share. Read-write access lets guest applications change those source files. This website uses no analytics, cookies, or third-party scripts.</p></details><details><summary>Where can I see the source?</summary><p>The <a href="https://github.com/riftvm/riftvm">App, CLI and Agent</a> live together. The <a href="https://github.com/riftvm/riftvm-omarchy-aarch64-image">Omarchy image pipeline</a> is maintained separately so App and image releases can be verified independently.</p></details></section>
+</main>
+<footer class="wrap"><a class="brand" href="./"><img src="assets/riftvm.svg" width="36" height="36" alt="">RiftVM</a><p>More room to make things.</p><a href="https://github.com/riftvm">Built in the open ↗</a></footer>
+</body></html>
