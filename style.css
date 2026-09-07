@@ -441,19 +441,18 @@ footer p {
 
 
 @media (forced-colors: active)  {
-  
+
   h1 span  {
    background: none;
    color: CanvasText;
-   
+
 }
 
   .hero-bottom  {
    background: Canvas;
    border: 1px solid CanvasText;
-   
-}
-
 
 }
 
+
+}
