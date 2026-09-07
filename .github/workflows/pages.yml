@@ -23,7 +23,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html style.css _site/
-          cp -R assets _site/
+          cp -R assets catalog _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
