@@ -1,8 +1,134 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Break into another world. Omarchy, macOS, and custom ARM64 Linux workspaces in one native Mac app."><meta name="theme-color" content="#050608"><title>RiftVM — Break into another world.</title><link rel="icon" href="assets/riftvm.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="preload" as="image" href="assets/rift-worlds.webp"></head><body><a class="skip" href="#main">Skip to content</a>
-<header><a class="brand" href="./"><img src="assets/riftvm.svg" width="44" height="44" alt="">RIFTVM</a><nav aria-label="Main"><a href="#workspaces">Workspaces</a><a href="#questions">Questions</a><a href="https://github.com/riftvm/riftvm">GitHub ↗</a></nav></header>
-<main id="main"><section class="hero"><div class="hero-copy"><p class="eyebrow">APPLE SILICON / MACOS 27</p><h1>Break into<br><span>another world.</span></h1><p class="intro">Omarchy. macOS. Your next workspace.<br>One native Mac app.</p><a class="text-link warm" href="https://github.com/riftvm/riftvm/releases">Follow the 0.1.0 release <span aria-hidden="true">↗</span></a></div><div class="hero-bottom"><p><span class="tiny">TWO WORLDS. ONE MAC.</span><strong>Cross the rift.</strong><a class="text-link cool" href="#workspaces">Explore RiftVM <span aria-hidden="true">↓</span></a></p><div class="release-note"><span class="status-dot"></span> 0.1.0 IN DEVELOPMENT<br><span>Public App download coming after testing.</span></div></div><span class="art-note">Concept artwork</span></section>
-<section class="workspaces wrap" id="workspaces"><p class="eyebrow">CHOOSE YOUR SIDE OF THE RIFT</p><h2>Different worlds.<br>Same desk.</h2><div class="world-grid"><article class="omarchy"><span class="number">01 / OMARCHY</span><h3>Find your flow.</h3><p>A keyboard-first Linux desktop inside your Mac. Start with RiftVM’s ARM64 Omarchy image, set up your user, and make it yours.</p><span class="world-tag">LINUX, WITH CHARACTER</span></article><article class="macos"><span class="number">02 / MACOS</span><h3>Start fresh.</h3><p>A separate macOS workspace from a compatible restore image. Try a new setup while your everyday system stays familiar.</p><span class="world-tag">A NEW SPACE TO EXPERIMENT</span></article></div><p class="custom">Bring your own world. <span>Custom ARM64 Linux also has an ISO installation path.</span></p></section>
-<section class="principles wrap"><p class="eyebrow">BUILT TO STAY OUT OF YOUR WAY</p><h2>Keep your momentum.</h2><div class="feature-grid"><article><span class="number">01</span><h3>Close it. Keep going.</h3><p>Close a workspace window while its virtual machine keeps running. Bring it back from the menu bar.</p></article><article><span class="number">02</span><h3>You choose what crosses.</h3><p>Share folders per workspace, read-only or read-write. Your Home folder is not shared by default.</p></article><article><span class="number">03</span><h3>Your world stays yours.</h3><p>New factory images start new workspaces. Existing guests keep their disks and update through their own tools.</p></article></div></section>
-<section class="faq wrap" id="questions"><p class="eyebrow">Before you begin</p><h2>A few useful details.</h2><details open><summary>Can I download RiftVM today?</summary><p>Not yet. Version 0.1.0 is in development. Follow the <a href="https://github.com/riftvm/riftvm/releases">App releases</a> for the signed download when it is ready. Image candidates are build and testing artifacts, not an App release.</p></details><details><summary>Are there known limitations?</summary><p>Omarchy can show delayed or incomplete keyboard input, and Return may be unresponsive, including at login. This issue is deferred for 0.1.0 and has no confirmed reliable workaround. Read the <a href="https://github.com/riftvm/riftvm/blob/main/docs/KNOWN_ISSUES.md">known issues</a> before using an Omarchy workspace.</p></details><details><summary>Which Macs will it support?</summary><p>RiftVM targets Apple Silicon Macs running macOS 27. Intel Macs and older macOS versions are outside the initial release scope.</p></details><details><summary>Is this an official Omarchy project?</summary><p>No. RiftVM is an independent project. Omarchy and its ARM64 adaptation are separate upstream projects; their licenses and attribution remain with their respective owners.</p></details><details><summary>What about shared files and privacy?</summary><p>Only grant a guest access to folders you intend to share. Read-write access lets guest applications change those source files. This website uses no analytics, cookies, or third-party scripts.</p></details><details><summary>Where can I see the source?</summary><p>The <a href="https://github.com/riftvm/riftvm">App, CLI and Agent</a> live together. The <a href="https://github.com/riftvm/riftvm-omarchy-aarch64-image">Omarchy image pipeline</a> is maintained separately so App and image releases can be verified independently.</p></details></section>
-</main><footer class="wrap"><a class="brand" href="./"><img src="assets/riftvm.svg" width="38" height="38" alt="">RIFTVM</a><p>Break into another world.</p><a href="https://github.com/riftvm">Built in the open ↗</a></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RiftVM brings focused Omarchy and macOS workspaces to Apple silicon Macs in one native app.">
+  <meta name="theme-color" content="#07152f">
+  <meta property="og:title" content="RiftVM — Bring another world to your Mac">
+  <meta property="og:description" content="Create focused Omarchy and macOS workspaces in one native app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://riftvm.com/">
+  <meta property="og:image" content="https://riftvm.com/assets/riftvm-omarchy-rally-car.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/riftvm-icon.png">
+  <link rel="canonical" href="https://riftvm.com/">
+  <title>RiftVM — Bring another world to your Mac</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="RiftVM home"><img class="mark" src="assets/riftvm-icon.png" width="36" height="36" alt="">RiftVM</a>
+    <nav aria-label="Main navigation">
+      <a href="#top">Products</a>
+      <a href="#features">Features</a>
+      <a href="#systems">Systems</a>
+      <a href="https://discord.gg/eGzEaP6TzR">Community</a>
+      <a class="button small" href="https://github.com/riftvm/riftvm">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="install-intro wrap" aria-labelledby="page-title">
+      <h1 id="page-title">Omarchy and macOS.<br>One native Mac app.</h1>
+      <p class="requirements"><strong>Requires macOS 27 or later and an Apple silicon Mac.</strong> Check your macOS version before installing.</p>
+      <div class="actions"><a class="button" href="https://github.com/riftvm/riftvm/releases/latest">Download from GitHub Releases</a><a class="text-link" href="https://github.com/riftvm/riftvm#install-riftvm">Installation guide →</a></div>
+      <p class="brew-command">Install with Homebrew: <code>brew install --cask riftvm/tap/riftvm</code></p>
+    </section>
+    <section class="split-hero" id="install" aria-label="Explore RiftVM workspaces">
+      <a class="split-product split-omarchy" href="#features" aria-label="Explore the Omarchy workspace">
+        <span class="product-content omarchy-content">
+          <span class="product-kicker">The featured experience</span>
+          <span class="product-title"><strong>Omarchy</strong> workspace</span>
+          <span class="product-copy">Open Omarchy.<br>Start working.</span>
+          <span class="product-action">Explore Omarchy <span aria-hidden="true">↙</span></span>
+          <span class="product-meta">Apple silicon · macOS 27+ · Signed &amp; notarized</span>
+        </span>
+        <span class="ghost-window hot-window" aria-hidden="true"><i></i><i></i><i></i><b>omarchy@riftvm</b><code>super + space</code></span>
+      </a>
+
+      <a class="split-product split-riftvm" href="#features" aria-label="Explore the macOS workspace">
+        <span class="product-content riftvm-content">
+          <span class="product-kicker">The native Mac experience</span>
+          <span class="product-title"><strong>macOS</strong> workspace</span>
+          <span class="product-copy">Install, run, snapshot.<br>Made native.</span>
+          <span class="system-list" aria-label="Supported system"><span>macOS</span></span>
+          <span class="product-action">Explore macOS <span aria-hidden="true">↘</span></span>
+        </span>
+        <span class="ghost-window cool-window" aria-hidden="true"><i></i><i></i><i></i><b>Virtual machines</b><code>Native. Local. Fast.</code></span>
+      </a>
+
+      <div class="hero-rift" aria-hidden="true"></div>
+      <div class="pixel-burst" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="hero-car" aria-hidden="true">
+        <span class="car-glow"></span>
+        <img src="assets/riftvm-omarchy-rally-car.webp" width="1536" height="1024" fetchpriority="high" alt="">
+      </div>
+      <div class="hero-choice" aria-hidden="true"><span>One app. Two worlds.</span></div>
+    </section>
+
+    <section class="strip" aria-label="Core capabilities">
+      <div class="wrap stats">
+        <div><strong>Native</strong><span>Virtualization.framework</span></div>
+        <div><strong>Focused</strong><span>macOS + Omarchy</span></div>
+        <div><strong>Local</strong><span>No account required</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap screenshots" aria-labelledby="screenshots-title">
+      <p class="eyebrow">The current app</p>
+      <h2 id="screenshots-title">Create a machine in a few guided steps.</h2>
+      <figure class="runtime-shot">
+        <img src="assets/riftvm-create-linux.png" width="1024" height="768" loading="lazy" decoding="async" alt="RiftVM guided creation flow for Omarchy and macOS workspaces">
+        <figcaption><strong>Choose the guest, then the hardware.</strong> RiftVM keeps setup focused and downloads only after you click Create.</figcaption>
+      </figure>
+      <div class="screenshot-grid">
+        <figure>
+          <img src="assets/riftvm-name-location.png" width="1024" height="768" loading="lazy" decoding="async" alt="RiftVM suggesting the astronomical virtual machine name Saturn and showing its abbreviated home folder path">
+          <figcaption><strong>Start with a memorable name.</strong> RiftVM suggests astronomical names and uses a default location of <code>~/RiftVM Virtual Machines</code>. You can choose another folder.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/riftvm-snapshots.png" width="600" height="504" loading="lazy" decoding="async" alt="RiftVM snapshot tree with search, restore, rename, protection, and storage information">
+          <figcaption><strong>Snapshots are a tree.</strong> Search branches, restore an ancestor, protect important states, and track their disk usage.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wrap" id="features">
+      <p class="eyebrow">A complete native workflow</p>
+      <h2>Powerful where it matters. Quiet everywhere else.</h2>
+      <div class="cards feature-grid">
+        <article><span>01</span><h3>Download at the end</h3><p>Choose your system and hardware first. RiftVM downloads only after you click Create, uses available resume data to retry interrupted downloads, and reuses saved images.</p></article>
+        <article><span>02</span><h3>Snapshot branches</h3><p>Stop your machine, then save or restore a snapshot. Browse its history tree, protect important points, and see their storage cost.</p></article>
+        <article><span>03</span><h3>Safe lifecycle</h3><p>Start, stop, and restart your workspace with protection against concurrent use of its writable disk. Omarchy Custom VirGL does not support memory-state save and restore.</p></article>
+        <article><span>04</span><h3>Modern storage</h3><p>Each workspace has its own writable disk. File snapshots preserve stopped-machine states so you can return to an earlier setup.</p></article>
+        <article><span>05</span><h3>Reliable networking</h3><p>NAT by default, with VMNet-backed bridged, host-only, logical-network, and port-forwarding modes when selected.</p></article>
+        <article><span>06</span><h3>Omarchy integration</h3><p>Focused input, dynamic display, clipboard, notifications, shared folders, and authenticated guest coordination.</p></article>
+      </div>
+    </section>
+
+    <section class="section roadmap" id="systems">
+      <div class="wrap roadmap-grid">
+        <div><p class="eyebrow">Two worlds, deeply supported</p><h2>Choose macOS or Omarchy.</h2><p>macOS restore releases come from Apple. Omarchy uses a pinned, verified Factory image and a dedicated integration stack.</p></div>
+        <ol>
+          <li><span>01</span><div><strong>Built for macOS 27 and later</strong><p>Pick a signed IPSW from the refreshed catalog or let Apple resolve the newest version compatible with your Mac.</p></div></li>
+          <li><span>02</span><div><strong>Omarchy, ready to work</strong><p>Download a verified preinstalled workspace and complete guided owner setup.</p></div></li>
+          <li><span>03</span><div><strong>Reusable image downloads</strong><p>Reuse cached images when creating more machines. Omarchy creation still connects to verify the signed release manifest.</p></div></li>
+          <li><span>04</span><div><strong>Useful diagnostics</strong><p>Export version, host, and VM configuration details directly from Community &amp; Feedback when asking for help.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta wrap">
+      <div><p class="eyebrow">Ready to go?</p><h2>Bring another world to your Mac.</h2></div>
+      <div class="actions"><a class="button" href="https://github.com/riftvm/riftvm/releases/latest" target="_blank" rel="noopener noreferrer">Download from GitHub Releases</a><a class="text-link" href="https://github.com/riftvm/riftvm/issues">Feedback →</a></div>
+    </section>
+  </main>
+
+  <footer class="wrap"><a href="https://github.com/riftvm/riftvm/blob/main/docs/TROUBLESHOOTING.md">Troubleshooting</a><span>RiftVM · MIT License</span><span>One app. Two worlds.</span></footer>
+</body>
+</html>

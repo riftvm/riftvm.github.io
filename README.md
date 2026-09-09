@@ -1,9 +1,11 @@
 # RiftVM website
 
-Static English GitHub Pages website for RiftVM. The current page accurately presents 0.1.0 as in development; enable the signed App download only after release acceptance.
+Static GitHub Pages website for RiftVM: Omarchy and macOS workspaces on Apple silicon Macs running **macOS 27 or later**.
 
-Preview: `python3 -m http.server 8765` and open `http://localhost:8765`.
+The maintained page and styles live in `riftvm/riftvm` under `docs/index.html` and `docs/styles.css`. This repository contains the publishing copy: copy the page, rename `styles.css` to `style.css` and update its stylesheet link, and copy referenced assets into `assets/` when updating it. Keep `catalog/` intact.
 
-No build dependencies, tracking, remote fonts or third-party scripts. The hero is locally hosted AI-generated concept artwork, labeled as such. The responsive layout uses real HTML text. The vector identity is sourced from `riftvm/riftvm/Resources/Brand/AppIcon.svg`.
+Guide visitors to Homebrew installation or GitHub Releases. Do not hardcode an app release version or describe the app as awaiting release. Keep the host requirements visible beside installation instructions.
 
-Use the default Pages URL initially. Add riftvm.com only after DNS has been configured and verified.
+Preview with `python3 -m http.server 8765`, then open `http://localhost:8765`.
+
+No build dependencies, analytics, remote fonts, or third-party scripts.
