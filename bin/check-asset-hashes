@@ -22,6 +22,14 @@ digest() {
 }
 
 (($# > 0)) || set -- index.html
+# A retired website has no local assets. Verify its new publication contract.
+if (($# == 1)) && [[ $1 == index.html ]] &&
+   grep -Fq '<link rel="canonical" href="https://atomsprout.com/riftvm/">' index.html &&
+   grep -Fq '<meta http-equiv="refresh" content="0;url=https://atomsprout.com/riftvm/">' index.html &&
+   grep -Fq 'location.replace("https://atomsprout.com/riftvm/"+location.search+location.hash)' index.html; then
+  echo 'OK: canonical, refresh and query/hash-preserving redirect point to AtomSprout.'
+  exit 0
+fi
 failures=0
 hashed=0
 checked=0
