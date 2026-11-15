@@ -25,7 +25,8 @@ jobs:
         run: |
           mkdir _site
           cp index.html style.css copy-command.css copy-command.js _site/
-          cp -R assets catalog _site/
+          cp -R assets catalog support _site/
+          printf 'riftvm.com\n' > _site/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

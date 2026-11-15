@@ -1,16 +1,17 @@
-# Website moved to AtomSprout
+# RiftVM website
 
-The complete riftvm product website is now maintained at:
+Official website: <https://riftvm.com/>. <https://riftvm.github.io/> also reaches
+this site through GitHub Pages' custom-domain redirect.
 
-- Website: https://atomsprout.com/riftvm/
-- Support: https://atomsprout.com/riftvm/support/
-- Source: https://github.com/atomsprout/atomsprout.github.io/tree/main/software-sites/riftvm
+The application source and downloads remain in
+[`riftvm/riftvm`](https://github.com/riftvm/riftvm).
 
-HTML, styles, scripts, images and product data have been transferred to the
-company repository. Edit and publish from that repository. This repository
-only retains compatibility redirects and can be retired by its owner.
+## Publish
 
-Deleting this repository also removes its old GitHub Pages URLs; existing
-external links and old app versions should use the company website or update
-to a current app release. App source, release assets and Homebrew taps remain
-in their separate repositories.
+Edit this repository's HTML, CSS, scripts, images and public Linux catalog.
+Run `./bin/check-asset-hashes` before committing. Pushes to `main` run
+`.github/workflows/pages.yml` and publish the static site through GitHub Pages.
+`riftvm.com` is the existing custom domain; retain its configuration.
+
+Preview with `python3 -m http.server 4186` and open <http://localhost:4186/>.
+Support is published at `/support/`.
